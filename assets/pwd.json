@@ -1,0 +1,56 @@
+[{
+    "name": "Abhay Chouksey",
+    "empid": 1,
+    "pwd": "abhay116"
+
+},
+{
+    "name": "Adarsh Pandey",
+    "empid": 2,
+    "pwd":"adarsh234"
+},
+{
+"name": "Anupama Shah",
+        "empid": 3,
+        "pwd": "anupama324"
+},
+{
+    "name": "Aniket Agrawal",
+    "empid": 4,
+    "pwd": "aniket432"
+},
+{
+    "name": "Brijesh Singh",
+    "empid": 5,
+    "pwd": "brijesh546"
+},
+{
+    "name": "chitransh vishwakarma",
+        "empid": 6,
+        "pwd": "chitra654"
+},
+{
+    "name": "Ananya Dwivedi",
+    "empid": 7,
+    "pwd": "ananya734"
+},
+{
+    "name": "Dhawal Motwani",
+    "empid": 8,
+    "pwd": "dhawal816"
+},
+{
+    "name": "Diksha Daryani",
+    "empid": 9,
+    "pwd": "diksha31"
+},
+{
+    "name": "Manya Singh",
+    "empid": 10,
+    "pwd": "manu12"
+},
+{
+    "name": "Harshita Ramchandani",
+    "empid": 11,
+    "pwd" : "harshi28"
+}]

@@ -1,0 +1,187 @@
+<!-- navbar start -->
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/images/logo.png" width="30" height="30" alt="">
+    </a>
+
+    <form class="form-inline my-2 my-lg-0">
+        
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/page2']">Page 2</button>
+      </form>
+  </nav>
+
+
+  <!-- nabar end -->
+
+
+  <!-- Content start -->
+  
+
+
+<div class="page text-center" *ngFor="let student of students;let i = index">
+<div style="padding-top: 10px;"><div class="container">
+  <div class="d-flex">
+      <div class="p-2">Employee Name: {{students[i].name}}</div>
+      
+      <div class="ml-auto p-2">Employee id: {{students[i].empid}}</div>
+    </div>
+    <div class="d-flex">
+    <div class="p-2">Employee email: {{students[i].emailid}}</div>
+      
+      <div class="ml-auto p-2">Employee contact: 9892564778</div>
+    </div>
+    <div style="padding-top: 10px;">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Parameter</th>
+          <th scope="col">Emmployee_value</th>
+          <th scope="col">Normal_value</th>
+          <th scope="col">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Blood Pressure</td>
+          <td>{{students[i].BPsys}}/{{students[i].BPdias}}</td>
+          <td>120/90</td>
+          <td>normal</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Oxygen_saturation</td>
+          <td>{{students[i].os_level}}</td>
+          <td>92</td>
+          <td>low</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>pulse</td>
+          <td>{{students[i].pulse}}</td>
+          <td>20</td>
+          <td>low</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>blood_sugar level</td>
+          <td>{{students[i].bs_level}}</td>
+          <td>70</td>
+          <td>high</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>cholesterol</td>
+          <td>{{students[i].cholesterol}}</td>
+          <td>70</td>
+          <td>high</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>respiration rate</td>
+          <td>{{students[i].respiration_rate}}</td>
+          <td>70</td>
+          <td>high</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card text-white bg-secondary">
+          <div class="card-body">
+            <h6 class="card-title">Stress : {{predictions[i].stress}}</h6>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-white bg-secondary">
+          <div class="card-body">
+              <h6 class="card-title">Diabetes: {{predictions[i].diabetes}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top: 10px;">
+      <div class="col-sm-6">
+        <div class="card text-white bg-secondary">
+          <div class="card-body">
+            <h6 class="card-title">CHD: {{predictions[i].CHD}}</h6>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-white bg-secondary">
+          <div class="card-body">
+              <h6 class="card-title">hypoxemia: {{predictions[i].Hypoxemia}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 10px;">
+      <div class="col-sm-6">
+        <div class="card text-white bg-secondary" >
+          <div class="card-body">
+            <h6 class="card-title">Asthama: {{predictions[i].Asthama}}</h6>
+            
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <!-- <div>
+      <table class="table table-sm table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Disease</th>
+              <th scope="col">Condition</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Stress</td>
+              <td>yes</td>
+             
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Diabetes</td>
+              <td>prediabetic</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>CHD</td>
+              <td>prediabetic</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Hypoxemia</td>
+              <td>prediabetic</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>asthema</td>
+              <td>prediabetic</td>
+              
+            </tr>
+          </tbody>
+        </table>
+
+    </div> -->
+
+</div>
+</div>
+</div>

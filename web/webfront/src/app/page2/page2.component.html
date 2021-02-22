@@ -1,0 +1,35 @@
+<!-- navbar start -->
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/images/logo.png" width="30" height="30" alt="">
+    </a>
+
+    <form class="form-inline my-2 my-lg-0">
+        
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/page1']">Page 1</button>
+      </form>
+  </nav>
+<!-- nabar end -->
+<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+<div class="input-group center" style="width: 50%;">
+    <input type="text" name="searchi" class="form-control" placeholder="Search" ngModel>
+    <span style="padding-left: 30px;">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button></span>
+  </div>
+</form>
+
+
+<div *ngIf="k">
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">Name : {{students[k].name}}</li>
+    <li class="list-group-item">email : {{students[k].emailid}}</li>
+    <li class="list-group-item">employee id : {{students[k].empid}}</li>
+    <li class="list-group-item">Blood Pressure : {{students[k].BPsys}}/{{students[k].BPdias}}</li>
+    <li class="list-group-item">Oxygen Saturation : {{students[k].os_level}}</li>
+    <li class="list-group-item">Pulse : {{students[k].pulse}}</li>
+    <li class="list-group-item">Blood Sugar  : {{students[k].bs_level}}</li>
+    <li class="list-group-item">Cholesterol : {{students[k].cholesterol}}</li>
+    <li class="list-group-item">Respiration Rate : {{students[k].respiration_rate}}</li>
+  </ul>
+  </div>
